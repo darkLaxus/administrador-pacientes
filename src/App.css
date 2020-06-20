@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+body{
+  background: #00d2ff !important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #3a7bd5,
+    #00d2ff
+  ) !important;
+  background: linear-gradient(
+    to left,
+    #3a7bd5,
+    #00d2ff
+  ) !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.formulario{
+  width: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-textarea{
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 300px;
+  min-height: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* -LISTA CITAS- */
+
+.listaCitas{
+  width: 1200px;
+  height: 650px;
+  overflow-y: scroll;
 }
 
-.App-link {
-  color: #61dafb;
+
+.listaCitas::-webkit-scrollbar{
+  background-color: #3a7bd5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listaCitas::-webkit-scrollbar-thumb{
+  background-color: white;
+  border-radius: 45px;
 }
